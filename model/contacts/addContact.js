@@ -11,7 +11,6 @@ const addContact = async ({ name, email, phone, favorite, user }) => {
     favorite,
     owner: user._id
   })
-  console.log(contact)
   await contact.save()
   return contact
 }
