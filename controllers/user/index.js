@@ -1,3 +1,3 @@
 const { updateUserController } = require('./userUpdateController')
-
-module.exports = { updateUserController }
+const { updateUserAvatarController } = require('./updateUserAvatarController')
+module.exports = { updateUserController, updateUserAvatarController }

@@ -1,6 +1,6 @@
 const { updateUserSubscription } = require('../../model/users/index')
 
-const updateUserController = async (req, res, next) => {
+const updateUserController = async (req, res) => {
   const body = req.body
   const { _id } = req.user
   if (!body.subscription) {
