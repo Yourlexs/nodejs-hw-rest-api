@@ -23,4 +23,10 @@ class NotAuthorizedError extends YourLexContactsError {
     this.status = 401
   }
 }
-module.exports = { ValidationError, WrongParametersError, NotAuthorizedError, YourLexContactsError }
+class VerificationError extends YourLexContactsError {
+  constructor(message) {
+    super(message)
+    this.status = 404
+  }
+}
+module.exports = { ValidationError, WrongParametersError, NotAuthorizedError, YourLexContactsError, VerificationError }
