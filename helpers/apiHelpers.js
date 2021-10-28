@@ -15,7 +15,7 @@ const errorHandler = (error, req, res, next) => {
   if (error instanceof YourLexContactsError) {
     return res.status(error.status).json({ message: error.message })
   }
-  console.log(errorHandler)
+  console.log('errorHandler')
   res.status(500).json({ message: error.message })
 }
 
